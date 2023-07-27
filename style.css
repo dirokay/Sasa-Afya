@@ -1,0 +1,265 @@
+* {
+    /* removes default browser margin */
+    margin: 0;
+}
+
+/* landing page */
+#background {
+    width: 1440px;
+    height: 1024px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: fixed; */
+    /* background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.5)); */
+    background: linear-gradient(75%black, 25%white);
+
+}
+
+/* rgba(0, 0, 0, 1) rgba(255, 255, 255, 0) */
+.navbar {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    /* padding: 30px 50px; */
+    /* position: absolute; */
+    color: white;
+    font-size: 32px;
+    font-family: 'M PLUS Rounded 1c';
+    cursor: pointer;
+}
+
+#logo {
+    width: 58px;
+    height: 66px;
+    margin-top: 2%;
+    margin-left: 8%;
+}
+
+#logotext {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: inline-block;
+    margin-left: -2.5%;
+    margin-top: 2%;
+}
+
+#product {
+    display: inline-block;
+    margin-left: 10%;
+    font-weight: lighter;
+}
+
+#lifestyle {
+    display: inline-block;
+    margin-left: 1%;
+    font-weight: lighter;
+}
+
+#button {
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    margin-left: 14%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+#logintext {
+    color: #498deb;
+    text-align: center;
+    padding-left: -10px;
+    padding-right: 10px;
+    padding-bottom: -10px;
+    padding-top: 10px;
+    font-weight: 600;
+
+    /* margin-right: 20px; */
+
+}
+
+#theme {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+    margin-top: -35%;
+    margin-left: -20rem;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#account {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+    margin-top: 3%;
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+    margin-left: 35%;
+    border-radius: 60px;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #498deb, #00e5c0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* logIn page styles */
+#background_login {
+    width: 1440px;
+    height: 1024px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: fixed; */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+#logo2 {
+    width: 58px;
+    height: 66px;
+    margin-top: 2%;
+    margin-left: 8%;
+    color: #A7A7A7;
+}
+
+#button2 {
+    display: inline-block;
+    width: 140px;
+    height: 50px;
+    margin-left: 14%;
+    border-radius: 20px;
+    background-color: #A7A7A7;
+
+}
+
+#logotext2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: inline-block;
+    margin-left: -2.5%;
+    margin-top: 2%;
+    color: #A7A7A7;
+}
+
+#logintext2 {
+    color: #498deb;
+    text-align: center;
+    padding-left: -10px;
+    padding-right: 10px;
+    padding-bottom: -10px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.login_rectangle {
+    background-color: white;
+    height: 600px;
+    width: 398px;
+    position: relative;
+    top: -10%;
+    bottom: -30%;
+    left: 25%;
+    right: -25%;
+
+}
+
+#cancel {
+    height: 30px;
+    width: 30px;
+    margin-left: 450px;
+    margin-top: 15px;
+    background-color: grey;
+}
+
+#darklogo {
+    width: 58px;
+    height: 66px;
+    margin-top: 2%;
+    margin-left: 45%;
+    padding-bottom: 20px;
+}
+
+#login {
+    text-align: center;
+    color: blue;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+}
+
+/* google login */
+.google {
+    width: 450px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#search_icon {
+    width: 40px;
+    height: 30px;
+
+}
+
+#g-text {
+    font-family: 'M PLUS Rounded 1c',
+        sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 80px;
+}
+
+/* facebook */
+.facebook {
+    width: 450px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#fbicon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+#f-text {
+    font-family: 'M PLUS Rounded 1c',
+        sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 80px;
+}
+
+/* phone */
+.phone {
+    width: 450px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#sicon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+#p-text {
+    font-family: 'M PLUS Rounded 1c',
+        sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 80px;
+}
