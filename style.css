@@ -1,22 +1,31 @@
-* {
+body, html {
     /* removes default browser margin */
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 0.001%;
+    /* position: relative; */
+    
 }
 
 /* landing page */
-#background {
-    width: 1440px;
-    height: 1024px;
+.background {
+    width: 100vw;
+    height:100vh;
+    z-index:0;
+    background-image: url('landing2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    /* position: fixed; */
-    /* background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.5)); */
-    background: linear-gradient(75%black, 25%white);
-
+    background-position: center;
+   }
+   /* overlay container */
+.overlay{
+ width: 100vw;
+height: 100vh;
+ background-color: rgba(0, 0, 0, 0.26);
+ background:linear-gradient(60% rgba(0, 0, 0, 0.86), rgba(255,255,255, 1));
 }
-
-/* rgba(0, 0, 0, 1) rgba(255, 255, 255, 0) */
+/* navigation */
 .navbar {
     width: 100%;
     padding: 20px;
@@ -27,10 +36,8 @@
 nav ul li {
     list-style-type: none;
     display: inline;
-    /* padding: 30px 50px; */
-    /* position: absolute; */
     color: white;
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'M PLUS Rounded 1c';
     cursor: pointer;
 }
@@ -40,85 +47,120 @@ nav ul li {
     height: 66px;
     margin-top: 2%;
     margin-left: 8%;
+    margin-right: -1%;
+    margin-bottom: -2%;
+    
 }
 
 #logotext {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     display: inline-block;
-    margin-left: -2.5%;
+    margin-left: -2%;
     margin-top: 2%;
+    margin-right: 1%;
 }
 
 #product {
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 15%;
+    font-size: 10px;
+    font-family: 'M PLUS Rounded 1c',sans-serif;
     font-weight: lighter;
+    text-decoration: none;
 }
 
 #lifestyle {
     display: inline-block;
     margin-left: 1%;
-    font-weight: lighter;
+    font-size: 10px;
+        font-family: sans-serif;
+        font-weight: 100;
+        text-decoration: none;
 }
 
 #button {
     display: inline-block;
     width: 140px;
     height: 50px;
-    margin-left: 14%;
-    border-radius: 20px;
+    margin-left:20%;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 1);
-
 }
 
 #logintext {
     color: #498deb;
     text-align: center;
-    padding-left: -10px;
+    /* padding-left: -10px;
     padding-right: 10px;
-    padding-bottom: -10px;
-    padding-top: 10px;
-    font-weight: 600;
-
-    /* margin-right: 20px; */
-
+    padding-bottom: 10px;
+    padding-top: 10px; */
+    text-align: center;
+ font-family: sans-serif;
+ font-weight: bold;
+ margin-right: 20px;
+ margin-top: 20px ;
+ margin-bottom: 10px;
 }
 
 #theme {
     text-align: center;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
-    margin-top: -35%;
-    margin-left: -20rem;
-    font-size: 5rem;
-    font-weight: 500;
+    margin-top: -26%;
+    margin-left: 3%;
+  font-size: 4rem;
+font-weight: 600;
 }
-
 #account {
     text-align: center;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: white;
-    margin-top: 3%;
+    margin-top: -2.5%;
     display: inline-block;
     width: 300px;
-    height: 20px;
-    margin-left: 35%;
+    height: 15px;
+    margin-left: 39%;
     border-radius: 60px;
-    font-size: 1.5rem;
-    background: linear-gradient(to right, #498deb, #00e5c0);
-    padding-top: 30px;
+    font-size: 1.3rem;
+    background: linear-gradient(to right,#498deb, #00e5c0);
+    padding-top: 20px;
     padding-bottom: 30px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
 }
 
 /* logIn page styles */
-#background_login {
-    width: 1440px;
-    height: 1024px;
+.background-login {
+width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-image: url('landing2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    /* position: fixed; */
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-position: center;
+}
+.overlay-login{
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.6);
+/* background: linear-gradient(60% rgba(0, 0, 0, 0.86), rgba(255, 255, 255, 1)); */
+}
+
+/* navigation- login */ 
+.navbar-login {
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    color: #A7A7A7;
+    font-size: 24px;
+    font-family: 'M PLUS Rounded 1c';
+    cursor: pointer;
 }
 
 #logo2 {
@@ -126,60 +168,88 @@ nav ul li {
     height: 66px;
     margin-top: 2%;
     margin-left: 8%;
-    color: #A7A7A7;
+    margin-right: -1%;
+    margin-bottom: -2%;
+    color: #A7A7A7;  
+}
+
+#logotext2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: inline-block;
+    margin-left: -2%;
+    margin-top: 2%;
+    margin-right: 1%;
+}
+
+#product2 {
+    display: inline-block;
+    margin-left: 15%;
+    font-size: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: lighter;
+}
+
+#lifestyle2 {
+    display: inline-block;
+    margin-left: 1%;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
 #button2 {
     display: inline-block;
     width: 140px;
     height: 50px;
-    margin-left: 14%;
-    border-radius: 20px;
-    background-color: #A7A7A7;
-
-}
-
-#logotext2 {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    display: inline-block;
-    margin-left: -2.5%;
-    margin-top: 2%;
-    color: #A7A7A7;
+    margin-left: 20%;
+    border-radius: 10px;
+    background-color:  #A7A7A7;
+    /* position: relative; */
 }
 
 #logintext2 {
     color: #498deb;
     text-align: center;
-    padding-left: -10px;
+    /* position: absolute; */
+    /* padding-left: -10px;
     padding-right: 10px;
-    padding-bottom: -10px;
-    padding-top: 10px;
-    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px; */
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
-
+#theme2 {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #A7A7A7; 
+    margin-top: -26%;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
 .login_rectangle {
-    background-color: white;
-    height: 600px;
-    width: 398px;
-    position: relative;
-    top: -10%;
-    bottom: -30%;
-    left: 25%;
-    right: -25%;
-
+    background-color: #F5F5F5;
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 30%;
+    bottom: 35%;
+    left: 37%;
+    right: -18%;
 }
-
 #cancel {
-    height: 30px;
-    width: 30px;
-    margin-left: 450px;
+    height: 20px;
+    width: 20px;
+    margin-left: 340px;
     margin-top: 15px;
-    background-color: grey;
+    color: grey;
 }
-
 #darklogo {
-    width: 58px;
-    height: 66px;
+    width: 50px;
+    height: 40px;
     margin-top: 2%;
     margin-left: 45%;
     padding-bottom: 20px;
@@ -190,76 +260,90 @@ nav ul li {
     color: blue;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
+    margin-top: -13px;
 }
 
 /* google login */
 .google {
-    width: 450px;
-    height: 50px;
-    background-color: grey;
+    width: 320px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.2);
     border-radius: 100px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 20px;
 }
-
 #search_icon {
-    width: 40px;
+    width: 20px;
     height: 30px;
-
 }
 
 #g-text {
-    font-family: 'M PLUS Rounded 1c',
-        sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1rem;
     font-weight: lighter;
     margin-left: 80px;
+    padding-top: 10px;
 }
 
 /* facebook */
 .facebook {
-    width: 450px;
-    height: 50px;
-    background-color: grey;
+width: 320px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.2);
     border-radius: 100px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 #fbicon {
     width: 40px;
-    height: 40px;
+    height: 20px;
     margin-left: 10px;
+    padding-top: 10px;
 }
 
 #f-text {
-    font-family: 'M PLUS Rounded 1c',
-        sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1rem;
     font-weight: lighter;
     margin-left: 80px;
+    position: absolute;
+    top: -10%;
+    padding-bottom: 50px;
 }
 
 /* phone */
 .phone {
-    width: 450px;
-    height: 50px;
-    background-color: grey;
+width: 320px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.2);
     border-radius: 100px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 20px;
+    position: relative;
+    
 }
 
 #sicon {
     width: 40px;
-    height: 40px;
-    margin-left: 10px;
+        height: 20px;
+        margin-left: 10px;
+        padding-top: 10px;
 }
 
 #p-text {
-    font-family: 'M PLUS Rounded 1c',
-        sans-serif;
-    font-size: 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        position: absolute;
+        margin-left: 80px;
+            top: -10%;
+            padding-bottom: 50px;
+} 
+.terms&conditions{
+    font-size: 10px;
+    font-family:'M PLUS Rounded 1c', sans-serif; 
     font-weight: lighter;
-    margin-left: 80px;
+    margin-left: 1px;
 }
